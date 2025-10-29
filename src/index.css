@@ -1,16 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #132f76;
+  --color-dark: #0c0e12;
+  --color-text: #181D27;
+  --color-gray: #FAFAFA;
+  --color-grey-border: #E4E4E4;
+  --color-footer-grey: #94979C;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Urbanist", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   ::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none; 
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
+/* BACKGORUND GRADIENT */
+.bg-gradient {
+  background: linear-gradient(
+    to bottom right,
+    #132f76 0%,             /* Deep blue starts at 0% */
+    #132f76 25%,            /* 🛑 Deep blue *ends* sharply at 25% */
+    #d53f8a 50%,            /* neon pink ends at 50% */
+    #e27a30 75%,            /* hot orange ends at 75% */
+    #0c0e12 100%            /* dark fade ends at 100% */
+  );
+  background-size: 500% 500%;
+  animation: waveFlow 8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(19, 47, 118, 1),
+    rgba(255, 27, 141, 0.3),
+    rgba(255, 107, 0, 0.2),
+    transparent 60%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@keyframes waveFlow {
+  0% {
+    background-position: 25% 25%;
+  }
+  25% {
+    background-position: 50% 75%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 25% 25%;
+  }
+}
+
+/* navbar glass effect */
+.glass-menu{
+  color: white;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px rgba(32, 38,135, 0.37);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
