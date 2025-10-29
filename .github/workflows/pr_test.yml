@@ -20,7 +20,9 @@ jobs:
       - name: Run Tests
         run: npx jest --ci --coverage --maxWorkers=2 --passWithNoTests
         continue-on-error: false
+
       - name: Create .eslintignore to exclude generated files
         run: echo "coverage/" > .eslintignore
+        
       - name: Lint Code for unused variables, etc.
         run: npx eslint . --ext .js,.jsx --max-warnings 0
