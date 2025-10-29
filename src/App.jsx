@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/navbar";
+import Newsletter from "./components/newsletter";
+import Footer from "./components/footer";
 
-const App = () => {
+const Layout = ({ children, navbarBg }) => {
   return (
-    <div className='text-red-500'>
-      Hello
-    </div>
-  )
-}
+    <main>
+      <Navbar bgType={navbarBg} />
+      {children}
+      <Newsletter />
+      <Footer />
+    </main>
+  );
+};
 
-export default App
+export default Layout;
