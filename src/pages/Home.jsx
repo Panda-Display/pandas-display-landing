@@ -1,5 +1,7 @@
 import React from "react";
 import HeroSection from "../components/heroSection";
+import HightlightSection from "../components/highlightSection";
+import WhyChooseSection from "../components/whyChooseSection";
 import Layout from "../App";
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
       <div className="bg-gradient">
         <HeroSection />
       </div>
+      <HightlightSection />
+      <WhyChooseSection />
     </Layout>
   );
 };
