@@ -25,7 +25,7 @@ const Navbar = ({bgType}) => {
 
           <ul className="hidden sm:flex justify-between items-center gap-7 font-semibold text-sm">
            <NavLink to='/'>Home</NavLink>
-            <li>About Us</li>
+            <NavLink to='/about-us'>About Us</NavLink>
             <li>Catalogue</li>
           </ul>
         </div>
@@ -75,7 +75,7 @@ const Navbar = ({bgType}) => {
         <div className="glass-menu absolute top-20 left-0 w-full bg-white shadow-md py-5 flex flex-col justify-center items-center space-y-4 font-semibold text-sm z-99 sm:hidden">
           <ul className="flex flex-col gap-5 items-center text-primary">
             <NavLink to='/'>Home</NavLink>
-            <li>About Us</li>
+            <NavLink to='/about-us'>About Us</NavLink>
             <li>Catalogue</li>
           </ul>
           <Link to='/contact-us'>
