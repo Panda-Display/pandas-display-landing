@@ -9,6 +9,7 @@
   --color-gray: #FAFAFA;
   --color-grey-border: #E4E4E4;
   --color-footer-grey: #94979C;
+  --color-custom-pink: #F4EBFF;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
+  background: transparent;
   font-family: "Urbanist", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

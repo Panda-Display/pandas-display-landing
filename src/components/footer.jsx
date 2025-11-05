@@ -9,7 +9,7 @@ const Footer = () => {
         <Link to='/'><img src={logo} alt="Logo" /></Link>
         <ul className="flex flex-col sm:flex-row justify-between items-center gap-7 font-semibold text-sm">
             <NavLink to='/'>Home</NavLink>
-            <li>About Us</li>
+            <NavLink to='/about-us'>About Us</NavLink>
             <li>Catalogue</li>
             <NavLink to='/contact-us'>Contact Us</NavLink>
           </ul>

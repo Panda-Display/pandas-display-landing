@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,7 +13,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about-us" element={<AboutUs />} /> */}
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Route>
       </Routes>
