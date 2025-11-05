@@ -41,8 +41,8 @@ body {
   );
   background-size: 500% 500%;
   animation: waveFlow 8s ease-in-out infinite;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 
 .bg-gradient::after {
