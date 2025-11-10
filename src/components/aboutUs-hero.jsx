@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const AboutUsHero = () => {
   return (
-  <section className="flex justify-between space-y-6 items-center text-center flex-col pb-15">
+  <section className="flex justify-between space-y-6 items-center text-left flex-col pb-15 py-20">
         <div className="mt-10 max-w-[80%] sm:p-3 space-y-6">
           <h5 className="text-primary font-semibold">About Us</h5>
           <h1 className="font-semibold text-4xl sm:text-[48px] sm:leading-15">
-            Lighting Up the Future of Digital <br className="hidden sm:block" />
+            Lighting Up the Future of Digital <br className="hidden lg:block" />
             Displays
           </h1>
 
@@ -16,6 +17,7 @@ const AboutUsHero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 m:gap-7">
+            <Link to='/catalogue'>
             <button
               className="border-primary border font-semibold text-bases rounded-full py-1 px-3 text-center active:bg-white active:text-primary transition-all duration-200 ease-out
              active:translate-y-[2px] active:scale-95
@@ -23,6 +25,7 @@ const AboutUsHero = () => {
             >
               Explore our catalogue
             </button>
+            </Link>
             <button
               className="border-white bg-primary text-white border font-semibold text-bases rounded-full py-1 px-3 text-center transition-all duration-200 ease-out
              active:translate-y-[2px] active:scale-95
