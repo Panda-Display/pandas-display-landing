@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Layout from "../App";
 import CatalogueHero from "../components/catalogue-hero";
 import ProductSection from "../components/productSection";
