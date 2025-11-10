@@ -10,7 +10,7 @@ const Footer = () => {
         <ul className="flex flex-col sm:flex-row justify-between items-center gap-7 font-semibold text-sm">
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/about-us'>About Us</NavLink>
-            <li>Catalogue</li>
+            <NavLink to='/catalogue'>Catalogue</NavLink>
             <NavLink to='/contact-us'>Contact Us</NavLink>
           </ul>
       </div>
@@ -21,7 +21,7 @@ const Footer = () => {
          <ul className="flex flex-col sm:flex-row justify-between items-center gap-7 font-semibold text-sm">
             <li>Terms</li>
             <li>Privacy</li>
-            <li>Cookies</li>
+            {/* <li>Cookies</li> */}
           </ul>
       </div>
       
