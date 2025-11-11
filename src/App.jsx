@@ -5,12 +5,12 @@ import Footer from "./components/footer";
 
 const Layout = ({ children, navbarBg }) => {
   return (
-    <main>
-      <Navbar bgType={navbarBg} />
-      {children}
-      <Newsletter />
-      <Footer />
-    </main>
+      <main>
+          <Navbar bgType={navbarBg} />
+          {children}
+          <Newsletter />
+          <Footer />
+      </main>
   );
 };
 

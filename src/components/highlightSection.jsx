@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HightlightSection = () => {
   return (
-    <section className="space-y-8 text-text pb-5">
+    <section className="space-y-8 text-text pb-5 z-100">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-15">
         <div
           className="w-full lg:w-[55%] h-[560px] bg-cover bg-no-repeat bg-center"

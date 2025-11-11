@@ -5,4 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  envPrefix: ['VITE_', 'ACCESS_KEY'],
 })
