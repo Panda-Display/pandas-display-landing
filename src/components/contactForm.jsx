@@ -1,13 +1,61 @@
 import React from "react";
 import contactImage from "../assets/images/contactImage.jpg";
 import tickbox from "../assets/icons/tickbox.svg";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
+
+ const onSubmit = async (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+
+  try {
+    toast.loading("Submitting message...");
+
+    const response = await fetch("/api/sendform", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+    toast.dismiss();
+
+    if (result.ok) {
+      toast.success("Message sent successfully!");
+      event.target.reset();
+    } else {
+      toast.error("Failed to send message.");
+    }
+  } catch {
+    toast.dismiss();
+    toast.error("Network error, please try again.");
+  }
+};
+
+
   return (
     <section className="bg-primary text-white flex justify-center py-20">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            fontSize: "12px",
+            padding: "10px 20px",
+            border: "2px solid #132f76",
+            background: "#fff",
+            color: "#333",
+            borderRadius: "15px",
+          },
+          iconTheme: {
+            primary: "#132f76",
+            secondary: "#fff",
+          },
+          duration: 5000,
+        }}
+      />
       <div className="w-[80%] flex flex-col lg:flex-row justify-between items-center gap-10">
         <div
-          className="w-full lg:w-xl h-[657px] bg-cover bg-no-repeat bg-center rounded-2xl"
+          className="w-full lg:w-xl mt-10 h-[657px] bg-cover bg-no-repeat bg-center rounded-2xl"
           style={{ backgroundImage: `url(${contactImage})` }}
         ></div>
 
@@ -20,7 +68,7 @@ const ContactForm = () => {
             and maintenance.
           </p>
 
-          <form className="space-y-6">
+          <form onSubmit={onSubmit} className="space-y-6">
             <div className="flex items-start border border-gray-300 rounded-md p-3 bg-white">
               <span className="text-xl mr-2">
                 <img src={tickbox} alt="" />
@@ -32,8 +80,9 @@ const ContactForm = () => {
                 <input
                   type="text"
                   id="name"
+                  name="fullName"
                   placeholder="Write here..."
-                  className="w-full border-none outline-none text-sm placeholder-gray-400"
+                  className="w-full border-none outline-none text-sm text-dark placeholder-gray-400"
                 />
               </div>
             </div>
@@ -49,8 +98,9 @@ const ContactForm = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Write here..."
-                  className="w-full border-none outline-none text-sm placeholder-gray-400"
+                  className="w-full border-none outline-none text-sm text-dark placeholder-gray-400"
                 />
               </div>
             </div>
@@ -64,8 +114,9 @@ const ContactForm = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 placeholder="Write here..."
-                className="w-full h-35 rounded-md px-3 text-sm placeholder-gray-400 outline-none focus:ring-1 focus:ring-gray-400"
+                className="w-full h-35 rounded-md text-dark px-3 text-sm placeholder-gray-400 outline-none focus:ring-1 focus:ring-gray-400"
                 rows="5"
               ></textarea>
             </div>

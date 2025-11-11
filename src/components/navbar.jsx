@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <section
-      className={`fixed top-0 left-0 w-full z-100 flex justify-center items-center transition-all duration-500 ease-in-out bg-transparent ${
+      className={`fixed top-0 left-0 w-full z-999 flex justify-center items-center transition-all duration-500 ease-in-out bg-transparent ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >

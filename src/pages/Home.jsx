@@ -6,11 +6,11 @@ import Layout from "../App";
 
 const Home = () => {
   return (
-    <Layout>
-      <HeroSection />
-      <HightlightSection />
-      <WhyChooseSection />
-    </Layout>
+      <Layout>
+        <HeroSection />
+        <HightlightSection />
+        <WhyChooseSection />
+      </Layout>
   );
 };
 
