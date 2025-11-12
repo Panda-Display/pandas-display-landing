@@ -8,10 +8,12 @@ import AboutUs from "./pages/AboutUs.jsx";
 import Catalogue from "./pages/Catalogue.jsx";
 import "./index.css";
 import './bubble.js';
+import ScrollToTop from "./components/scrollToTop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
