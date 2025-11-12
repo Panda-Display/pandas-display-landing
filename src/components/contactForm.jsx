@@ -27,7 +27,7 @@ const ContactForm = () => {
     } else {
       toast.error("Failed to send message. Please try again.");
     }
-  } catch (error) {
+  } catch {
     toast.dismiss();
     toast.error("An error occurred. Please check your connection.");
   }
