@@ -1,5 +1,6 @@
 import React from 'react'
 import catalogueVideo from "../assets/videos/catalogueVideo.mp4";
+import videoPoster from "../assets/images/homepageImage-2.png";
 
 // chero section of the catalogue paeg
 const CatalogueHero = () => {
@@ -20,6 +21,7 @@ const CatalogueHero = () => {
         <div className="max-w-[80%]">
           <video
             src={catalogueVideo}
+            poster={videoPoster}
             autoPlay
             loop
             muted
