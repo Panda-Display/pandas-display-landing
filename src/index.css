@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+:root {
+  --circle-size: 80%;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --circle-size: 150vw;
+  }
+}
+
 @theme {
   --color-primary: #132f76;
   --color-dark: #0c0e12;
@@ -10,7 +20,7 @@
   --color-grey-border: #e4e4e4;
   --color-footer-grey: #94979c;
   --color-custom-pink: #f4ebff;
-  --circle-size: 80%;
+  /* --circle-size: 80%; */
   --blending: hard-light;
   --color1: 18, 113, 255;
   --color2: 221, 74, 255;
@@ -26,6 +36,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x:hidden;
+  position: relative;
   width: 100%;
   background: transparent;
   font-family: "Urbanist", sans-serif;
@@ -57,9 +68,8 @@ body {
     /* #d53f8a 50%, */
     #132f76 100%
   );
-  /* position: absolute;
   top:0;
-  left:0; */
+  left:0;
   overflow: hidden;
   /* width: 100vw;
   height: 70vh; */
@@ -235,11 +245,4 @@ svg {
   top: -50%;
   left: -50%;
   opacity: 0.7;
-}
-
-
-@media (max-width: 640px) {
-  @theme {
-    --circle-size: 150vw; 
-  }
 }
