@@ -22,7 +22,13 @@ const WhyChooseSection = () => {
             reliability, and visual excellence, helping brands stand out and
             connect with their audience.
           </p>
-          <video src={homepageVideo} autoPlay loop muted />
+          <video
+            src={homepageVideo}
+            autoPlay
+            loop
+            muted
+            playsInline // <-- ADD THIS
+          />
         </div>
 
         <ul className="lg:w-1/2 space-y-7 text-lg sm:text-2xl">
