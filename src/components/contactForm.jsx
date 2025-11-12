@@ -7,28 +7,29 @@ const ContactForm = () => {
 
  const onSubmit = async (event) => {
   event.preventDefault();
-  const formData = new FormData(event.target);
+  const form = event.target;
+  const formData = new FormData(form);
 
   try {
     toast.loading("Submitting message...");
 
-    const response = await fetch("/api/sendform", {
+    const response = await fetch("https://api.myqrmenu.co/api/panda/submit-form", {
       method: "POST",
       body: formData,
     });
 
     const result = await response.json();
-    toast.dismiss();
+    toast.dismiss(); // remove loading toast
 
-    if (result.ok) {
+    if (result.success) {
       toast.success("Message sent successfully!");
-      event.target.reset();
+      form.reset();
     } else {
-      toast.error("Failed to send message.");
+      toast.error("Failed to send message. Please try again.");
     }
   } catch {
     toast.dismiss();
-    toast.error("Network error, please try again.");
+    toast.error("An error occurred. Please check your connection.");
   }
 };
 
