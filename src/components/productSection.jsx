@@ -63,11 +63,11 @@ const ProductSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {activeCategory?.products.map((product, index) => (
-            <div key={index} className="space-y-2">
-              <div
+            <div key={index} className="space-y-2 border border-grey-border rounded-2xl p-3">
+              {/* <div
                 className="w-full lg:w-[384px] h-[256px] bg-cover bg-no-repeat bg-center rounded-2xl"
                 style={{ backgroundImage: `url(${product.image})` }}
-              ></div>
+              ></div> */}
               <h5 className="text-primary font-semibold text-sm">
                 {product.model}
               </h5>
