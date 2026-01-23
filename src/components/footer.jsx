@@ -19,8 +19,8 @@ const Footer = () => {
           © 2025 Panda Display. All rights reserved.
         </p>
          <ul className="flex flex-col sm:flex-row justify-between items-center gap-7 font-semibold text-sm">
-            <li>Terms</li>
-            <li>Privacy</li>
+            <NavLink to='/terms-and-conditions'><li className='hover:border-b-2 hover:border-b-white hover:translate-y-[-2] transition-all ease-in'>Terms</li></NavLink>
+            <NavLink to='/privacy-policy'><li className='hover:border-b-2 hover:border-b-white hover:translate-y-[-2] transition-all ease-in'>Privacy</li></NavLink>
             {/* <li>Cookies</li> */}
           </ul>
       </div>
