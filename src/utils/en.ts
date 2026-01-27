@@ -6,6 +6,7 @@ const en = {
     contactUs: "Contact Us",
   },
 
+  //HeroSection
   heroSection: {
     titleLine1: "Brightening your World",
     titleLine2: "Through Innovation",
@@ -16,6 +17,7 @@ const en = {
     getQuote: "Get a Free Quote",
   },
 
+  //Highlight Section
   highlightSection: {
     title: "The Future of Digital Display Solutions",
     description:
@@ -23,6 +25,7 @@ const en = {
     learnMore: "Learn More",
   },
 
+  //Value Section
   valueSection: {
     subtitle: "Our Core Values",
     title: "What do we value?",
@@ -49,6 +52,7 @@ const en = {
     ],
   },
 
+  //Why Choose Section
   whyChooseSection: {
     title: "Why Choose Panda Display?",
     description:
@@ -62,6 +66,7 @@ const en = {
     ],
   },
 
+  //WHO We are
   whoWeAre: {
     title: "Who We Are?",
     description:
@@ -80,6 +85,7 @@ const en = {
       "Founded with a vision to redefine visual communication in Africa, Panda Display blends technology, craftsmanship, and customer-centric service to deliver outstanding LED display experiences.",
   },
 
+  //Hiring Section
   hiringSection: {
     subtitle: "We’re hiring!",
     title: "Meet our team",
@@ -98,6 +104,7 @@ const en = {
     ],
   },
 
+  //About Us Hero
   aboutUsHero: {
     subtitle: "About Us",
     titleLine1: "Lighting Up the Future of Digital",
@@ -108,6 +115,7 @@ const en = {
     getQuote: "Get a Free Quote",
   },
 
+  //Catalogue Hero
   catalogueHero: {
     subtitle: "Our Catalogue",
     titleLine1: "Explore Our Range of High-",
@@ -116,6 +124,39 @@ const en = {
       "Explore our range of vibrant LED displays built for every occasion.",
   },
 
+  //Catalogue Section
+  catalogue: {
+    filters: {
+      all: "All",
+      indoor: "Indoor LED Screens",
+      outdoor: "Outdoor LED Screens",
+      rental: "Rental LED Screens",
+      transparent: "Transparent LED Screens",
+    },
+
+    actions: {
+      viewDetails: "View Details",
+      requestQuote: "Request Quote",
+      downloadSpec: "Download Datasheet",
+    },
+
+    specifications: {
+      title: "Specifications",
+      pixelPitch: "Pixel Pitch",
+      brightness: "Brightness",
+      cabinetSize: "Cabinet Size",
+      refreshRate: "Refresh Rate",
+      resolution: "Resolution",
+      viewingAngle: "Viewing Angle",
+      powerConsumption: "Power Consumption",
+      waterproofLevel: "Waterproof Level",
+      lifespan: "Lifespan",
+      weight: "Weight",
+      maintenance: "Maintenance Type",
+    },
+  },
+
+  //Contact Form
   contactForm: {
     title: "Contact Us",
     descriptionLine1: "Ready to choose the right LED screen for your project?",
@@ -136,6 +177,7 @@ const en = {
     },
   },
 
+  //Newsletter Section
   newsletter: {
     title: "Subscribe to our newsletter",
     description:
@@ -144,6 +186,7 @@ const en = {
     subscribe: "Subscribe",
   },
 
+  //Footer Section
   footer: {
     home: "Home",
     aboutUs: "About Us",
@@ -152,6 +195,87 @@ const en = {
     terms: "Terms",
     privacy: "Privacy",
     copyright: "© 2025 Panda Display. All rights reserved.",
+  },
+
+  //Privacy Policy Section
+  privacyPolicy: {
+    title: "Privacy Policy – Panda Display Limited",
+    effectiveDate: "Effective Date: January 12, 2026",
+
+    intro1:
+      'Panda Display Limited ("we," "our," or "us") is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your information when you interact with our website, products, and services.',
+    intro2:
+      "By using our website and services, you consent to the practices described in this Policy.",
+
+    sections: {
+      whoWeAre: {
+        title: "1. Who We Are",
+        description:
+          "Panda Display Limited is a Nigerian-based company providing LED display screen sales, rentals, installations, servicing, and maintenance. While we primarily operate in Nigeria, we also serve clients in other countries.",
+      },
+
+      childrenPrivacy: {
+        title: "12. Children's Privacy",
+        description:
+          "Our services are not intended for individuals under the age of 18. We do not knowingly collect personal data from minors.",
+      },
+
+      changes: {
+        title: "13. Changes to This Privacy Policy",
+        description:
+          "We may update this Privacy Policy at any time. Changes will be published on this page with an updated effective date. Continued use of our website indicates acceptance of the updated policy.",
+      },
+
+      contact: {
+        title: "14. Contact Information",
+        company: "Panda Display Limited",
+        emailLabel: "Email:",
+        phoneLabel: "Phone:",
+        addressLabel: "Office Address:",
+      },
+    },
+  },
+
+  //Terms & Condition Section
+  terms: {
+    title: "Terms & Conditions – Panda Display Limited",
+    effectiveDate: "Effective Date: January 12, 2026",
+
+    intro:
+      "Welcome to Panda Display Limited. By accessing our website, engaging our services, or purchasing our products, you agree to comply with and be legally bound by these Terms and Conditions.",
+
+    sections: {
+      companyInfo: {
+        title: "1. Company Information",
+        description:
+          "Panda Display Limited is a digital display solutions company primarily operating in Nigeria, providing LED screen sales, rentals, installations, servicing, and maintenance.",
+      },
+
+      products: {
+        title: "3. Products & Services",
+        items: [
+          "Sale of LED display screens",
+          "Rental of LED screens",
+          "Installation & configuration",
+          "Maintenance & technical support",
+          "Consultation services",
+        ],
+      },
+
+      governingLaw: {
+        title: "16. Governing Law",
+        description:
+          "These Terms and Conditions shall be governed by and interpreted in accordance with the laws of the Federal Republic of Nigeria.",
+      },
+
+      contact: {
+        title: "18. Contact Information",
+        company: "Panda Display Limited",
+        emailLabel: "Email:",
+        phoneLabel: "Phone:",
+        addressLabel: "Office Address:",
+      },
+    },
   },
 };
 
