@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient max-h-dvh min-h-[92vh] lg:h-[min(100vh,780px)]">
-      <div className="text-white h-full w-full flex justify-center items-center flex-col absolute z-100">
-        <div className="mt-12 sm:px-3 space-y-6 text-center sm:text-left w-[80%]">
-          <h1 className="font-semibold max-w-[16ch] sm:max-w-none mx-auto text-4xl sm:text-[64px] sm:leading-15">
-            Brightening your World <br className="hidden sm:block" /> Through
-            Innovation
+    <section className="relative bg-gradient h-[92vh] lg:h-[min(95vh,900px)] 2xl:h-[92vh]">
+      <div className="text-white h-full w-full flex justify-center items-center flex-col pt-12 absolute z-100">
+        <div className="sm:px-3 space-y-6 text-center sm:text-left w-[80%]">
+          <h1 className="font-semibold max-w-[16ch] sm:max-w-none mx-auto text-4xl sm:text-[48px] md:text-[64px]  md:leading-15">
+            Brightening your World <br className="hidden sm:block" /> Through Innovation
           </h1>
 
-          <p className="font-light max-w-[33ch] mx-auto text-base sm:max-w-none md:text-xl">
+          <p className="font-light max-w-[33ch] sm:max-w-none mx-auto text-base md:text-xl">
             Delivering high-quality LED display solutions that inspire,
             <br className="hidden sm:block" />
             engage, and elevate brands.
