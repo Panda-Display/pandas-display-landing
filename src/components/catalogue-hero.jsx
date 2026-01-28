@@ -1,9 +1,20 @@
-import React from "react";
-import catalogueVideo from "../assets/videos/catalogueVideo.mp4";
+import React, { useEffect, useRef } from "react";
 import videoPoster from "../assets/images/homepageImage-2.png";
 
-// chero section of the catalogue paeg
-const CatalogueHero = () => {
+// Hero section of the catalogue page
+const CatalogueHero = ({ video }) => {
+  const videoRef = useRef(null);
+
+  // Reload and play video when it changes
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(error => {
+        console.log("Video autoplay prevented:", error);
+      });
+    }
+  }, [video]);
+
   return (
     <section className="flex justify-between space-y-6 items-center text-left flex-col py-20">
       <div className="mt-10 w-[80%] sm:p-3 space-y-6">
@@ -20,12 +31,13 @@ const CatalogueHero = () => {
       </div>
       <div className="max-w-[80%]">
         <video
-          src={catalogueVideo}
+          ref={videoRef}
+          src={video}
           poster={videoPoster}
           autoPlay
           loop
           muted
-          playsInline // <-- ADD THIS
+          playsInline
           className="border-2 border-purple-600 rounded-3xl"
         />
       </div>
