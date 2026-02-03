@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { productData } from "../utils/productData";
 
-const ProductSection = () => {
-  const [activeTabId, setActiveTabId] = useState("indoor");
+const ProductSection = ({ activeTabId, setActiveTabId }) => {
   const [indicatorStyle, setIndicatorStyle] = useState({});
   const tabRefs = useRef([]);
 

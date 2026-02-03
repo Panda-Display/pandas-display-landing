@@ -18,11 +18,20 @@ import glassIcon from "../assets/icons/glass.svg";
 import terminalIcon from "../assets/icons/terminal.svg";
 import displayIcon from "../assets/icons/display.svg";
 
+// Import videos
+import catalogueVideo from "../assets/videos/catalogueVideo.mp4";
+import outdoorVideo from "../assets/videos/OutdoorLEDScreens.mp4";
+import flexibleVideo from "../assets/videos/FlexibleLEDScreens.mp4";
+import rentalVideo from "../assets/videos/RentalLEDSolution.mp4";
+import transparentVideo from "../assets/videos/TransparentLEDScreens.mp4";
+import videoWallsVideo from "../assets/videos/LEDVideoWalls.mp4";
+
 export const productData = [
   // 01
   {
     id: "indoor",
     tab: "Indoor LED Screens",
+    video: catalogueVideo,
     description:
       "Our Indoor LED Screens are built for brilliance and precision in controlled environments. With fine pixel pitches and sleek modular designs, they deliver sharp images and seamless visuals ideal for close viewing. ",
     clients: [
@@ -115,6 +124,7 @@ export const productData = [
   {
     id: "outdoor",
     tab: "Outdoor LED Screens",
+    video: outdoorVideo,
     description:
       "Built to thrive in all weather conditions, our Outdoor LED Screens are engineered for brightness, strength, and long-distance visibility. Whether for billboards, stadiums, or outdoor events, they guarantee performance in every environment.",
     clients: [
@@ -209,6 +219,7 @@ export const productData = [
   {
     id: "flexible",
     tab: "Flexible LED Screens ",
+    video: flexibleVideo,
     description:
       "Our Flexible LED Screens introduce a new level of creative freedom. Designed with soft, bendable modules, they adapt to curved, wavy, or irregular surfaces, perfect for modern architectural and artistic designs.",
     clients: [
@@ -290,6 +301,7 @@ export const productData = [
   {
     id: "rental",
     tab: "Rental LED Solution",
+    video: rentalVideo,
     description:
       "Our Rental LED Displays are designed for quick setup, easy mobility, and crystal-clear visuals — perfect for short-term installations like events, exhibitions, and concerts.",
     clients: [
@@ -342,6 +354,7 @@ export const productData = [
   {
     id: "transparent",
     tab: "Transparent LED Screens",
+    video: transparentVideo,
     description:
       "Our Transparent LED Screens combine innovation and design, delivering high-impact visuals while maintaining transparency, ideal for glass walls and modern architecture.",
     clients: [
@@ -392,6 +405,7 @@ export const productData = [
   {
     id: "walls",
     tab: "LED Video Walls",
+    video: videoWallsVideo,
     description:
       "Our LED Video Walls offer seamless, large-format visual experiences. With ultra-fine pixel pitches, they provide cinematic visuals ideal for control rooms, auditoriums, and broadcast studios.",
     clients: [
