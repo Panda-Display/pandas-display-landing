@@ -130,29 +130,46 @@ const en = {
       all: "All",
       indoor: "Indoor LED Screens",
       outdoor: "Outdoor LED Screens",
+      flexible: "Flexible LED Screens",
       rental: "Rental LED Screens",
       transparent: "Transparent LED Screens",
+      videoWalls: "LED Video Walls",
     },
 
-    actions: {
-      viewDetails: "View Details",
-      requestQuote: "Request Quote",
-      downloadSpec: "Download Datasheet",
+    indoor: {
+      title: "Indoor LED Screens",
+      description:
+        "High-resolution LED displays designed for indoor environments such as conference rooms, malls, control rooms, and auditoriums.",
     },
 
-    specifications: {
-      title: "Specifications",
-      pixelPitch: "Pixel Pitch",
-      brightness: "Brightness",
-      cabinetSize: "Cabinet Size",
-      refreshRate: "Refresh Rate",
-      resolution: "Resolution",
-      viewingAngle: "Viewing Angle",
-      powerConsumption: "Power Consumption",
-      waterproofLevel: "Waterproof Level",
-      lifespan: "Lifespan",
-      weight: "Weight",
-      maintenance: "Maintenance Type",
+    outdoor: {
+      title: "Outdoor LED Screens",
+      description:
+        "Weather-resistant LED screens built for high brightness and visibility in outdoor advertising and event environments.",
+    },
+
+    flexible: {
+      title: "Flexible LED Screens",
+      description:
+        "Bendable LED displays designed for curved, cylindrical, and creative installations.",
+    },
+
+    rental: {
+      title: "Rental LED Screens",
+      description:
+        "Lightweight and modular LED screens ideal for temporary installations, concerts, exhibitions, and events.",
+    },
+
+    transparent: {
+      title: "Transparent LED Screens",
+      description:
+        "See-through LED displays that combine digital visuals with physical space, perfect for glass walls and storefronts.",
+    },
+
+    videoWalls: {
+      title: "LED Video Walls",
+      description:
+        "Large-scale LED video wall solutions for immersive visual experiences in control rooms, lobbies, and arenas.",
     },
   },
 
